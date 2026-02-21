@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanos Loizou | Staff Engineer — Perception & Autonomy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #f97316 0%, #ea580c 50%, #dc2626 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(24, 24, 27, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(63, 63, 70, 0.3); }
+        .glow { box-shadow: 0 0 30px rgba(249, 115, 22, 0.15); }
+        .timeline-dot { box-shadow: 0 0 10px rgba(249, 115, 22, 0.6), 0 0 20px rgba(249, 115, 22, 0.2); }
+        .project-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .project-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .skill-tag { transition: all 0.2s ease; }
+        .skill-tag:hover { background: rgba(249, 115, 22, 0.15); border-color: rgba(249, 115, 22, 0.5); color: #f97316; }
+        .fade-in { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+        @keyframes fadeIn { to { opacity: 1; } }
+        .hero-grid { background-image: radial-gradient(rgba(63, 63, 70, 0.3) 1px, transparent 1px); background-size: 24px 24px; }
+        @media print { .no-print { display: none; } body { background: white; color: black; } }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-300 selection:bg-orange-500/30 antialiased">
+
+    <!-- Floating nav -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 glass rounded-full px-8 py-3 no-print">
+        <div class="flex items-center gap-8 text-sm">
+            <a href="#experience" class="text-zinc-400 hover:text-white transition-colors">Experience</a>
+            <a href="#projects" class="text-zinc-400 hover:text-white transition-colors">Projects</a>
+            <a href="#education" class="text-zinc-400 hover:text-white transition-colors">Education</a>
+            <a href="#skills" class="text-zinc-400 hover:text-white transition-colors">Skills</a>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-6">
+
+        <!-- Hero -->
+        <header class="min-h-[80vh] flex flex-col justify-center relative pt-20 pb-16">
+            <div class="absolute inset-0 hero-grid opacity-30 pointer-events-none"></div>
+            <div class="relative">
+                <p class="text-orange-500 font-mono text-sm tracking-wider mb-4 fade-in" style="animation-delay: 0.1s">STAFF ENGINEER — PERCEPTION & VISION</p>
+                <h1 class="text-6xl md:text-7xl font-extrabold text-white mb-6 leading-[1.05] fade-in" style="animation-delay: 0.2s">
+                    Stephanos<br>
+                    <span class="gradient-text">Loizou</span>
+                </h1>
+                <p class="text-xl text-zinc-400 max-w-xl leading-relaxed mb-10 fade-in" style="animation-delay: 0.3s">
+                    Building autonomous systems that see, understand, and act. 7+ years shipping perception and ML at the edge — from subsea robots to self-driving vehicles.
+                </p>
+                <div class="flex flex-wrap gap-4 fade-in" style="animation-delay: 0.4s">
+                    <a href="mailto:loizoustephanos@gmail.com" class="px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-xl transition-all shadow-lg shadow-orange-900/30 font-medium flex items-center gap-2">
+                        <i class="fas fa-envelope text-sm"></i> Get in touch
+                    </a>
+                    <a href="/CV.pdf" download class="px-6 py-3 glass hover:border-zinc-600 text-white rounded-xl transition-all font-medium flex items-center gap-2">
+                        <i class="fas fa-download text-sm"></i> Download CV
+                    </a>
+                </div>
+                <div class="flex gap-5 mt-8 fade-in" style="animation-delay: 0.5s">
+                    <a href="https://www.linkedin.com/in/stephanos-loizou-153315123/" target="_blank" class="text-zinc-500 hover:text-orange-500 transition-colors text-lg" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/LoizouS" target="_blank" class="text-zinc-500 hover:text-orange-500 transition-colors text-lg" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Experience -->
+        <section id="experience" class="mb-32">
+            <h2 class="text-zinc-500 uppercase tracking-[0.2em] text-xs font-bold mb-16 flex items-center gap-4">
+                <span>Experience</span>
+                <div class="h-px bg-zinc-800 flex-1"></div>
+            </h2>
+
+            <div class="space-y-20">
+                <!-- Oxa Staff -->
+                <div class="relative pl-10 before:absolute before:left-[7px] before:top-3 before:bottom-0 before:w-px before:bg-gradient-to-b before:from-orange-600 before:to-zinc-800">
+                    <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-orange-600 timeline-dot"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                        <h3 class="text-2xl font-bold text-white">Staff Engineer — Perception / Vision</h3>
+                        <span class="text-sm font-mono text-zinc-500 mt-1 sm:mt-0">Apr 2025 — Present</span>
+                    </div>
+                    <p class="text-orange-500 font-semibold mb-1">Oxa</p>
+                    <p class="text-zinc-500 text-sm mb-5">UK · Autonomous Vehicles</p>
+                    <ul class="space-y-3 text-zinc-400 text-sm leading-relaxed">
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Overseeing deployment of multi-modal sensor-fusion ML models and components to edge compute devices.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Contributing to the design and implementation of end-to-end GPU-zero-copy robotics-oriented architecture.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Oxa Senior -->
+                <div class="relative pl-10 before:absolute before:left-[7px] before:top-3 before:bottom-0 before:w-px before:bg-zinc-800">
+                    <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-zinc-700 border-2 border-orange-600/40"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                        <h3 class="text-2xl font-bold text-white">Senior Engineer — Perception / Vision</h3>
+                        <span class="text-sm font-mono text-zinc-500 mt-1 sm:mt-0">Nov 2022 — Apr 2025</span>
+                    </div>
+                    <p class="text-orange-500 font-semibold mb-1">Oxa</p>
+                    <p class="text-zinc-500 text-sm mb-5">UK · Autonomous Vehicles</p>
+                    <ul class="space-y-3 text-zinc-400 text-sm leading-relaxed">
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Led Traffic Signal Mapping and Classification — prioritising and delivering features, bug fixes, and architectural improvements.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Improved online classification performance of Traffic Light Recognition by 10%+ with increased coverage across new domains.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Deployed proof-of-concept multi-modal sensor-fusion ML models to edge devices (C++, Python, CUDA, TensorRT).</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Implemented automated metrics and report generation, reducing iteration time by more than 5×.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>R&D in drift detection methods and scalable MLOps pipeline productisation (Google Cloud, Python).</span></li>
+                    </ul>
+                </div>
+
+                <!-- SeeByte Senior -->
+                <div class="relative pl-10 before:absolute before:left-[7px] before:top-3 before:bottom-0 before:w-px before:bg-zinc-800">
+                    <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-zinc-700 border-2 border-zinc-600"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                        <h3 class="text-2xl font-bold text-white">Senior Development Engineer</h3>
+                        <span class="text-sm font-mono text-zinc-500 mt-1 sm:mt-0">Feb 2020 — Nov 2022</span>
+                    </div>
+                    <p class="text-orange-500 font-semibold mb-1">SeeByte</p>
+                    <p class="text-zinc-500 text-sm mb-5">UK · Subsea Autonomy & Defence</p>
+                    <ul class="space-y-3 text-zinc-400 text-sm leading-relaxed">
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Led unsupervised segmentation product combining human-in-the-loop workflows with classical and deep ML approaches.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>R&D in SOTA vision techniques: object detection, segmentation, edge-device models, confidence estimation, autoencoders, CNNs, VAEs, and multi-task learning (TensorFlow, PyTorch, TensorRT).</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Contributed to in-house MLOps framework — automated training and validation, reducing person-hours by 100%+ while improving QA.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Delivered AI products to clients. Presented technical findings to technical and non-technical audiences, leading to contract-winning bids.</span></li>
+                    </ul>
+                </div>
+
+                <!-- SeeByte Dev -->
+                <div class="relative pl-10 before:absolute before:left-[7px] before:top-3 before:bottom-0 before:w-px before:bg-zinc-800">
+                    <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-zinc-700 border-2 border-zinc-600"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                        <h3 class="text-2xl font-bold text-white">Development Engineer</h3>
+                        <span class="text-sm font-mono text-zinc-500 mt-1 sm:mt-0">Jun 2018 — Feb 2020</span>
+                    </div>
+                    <p class="text-orange-500 font-semibold mb-1">SeeByte</p>
+                    <p class="text-zinc-500 text-sm mb-5">UK · Subsea Autonomy</p>
+                    <ul class="space-y-3 text-zinc-400 text-sm leading-relaxed">
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Implemented safety-critical ROV control over 4G communications — state machines, low-latency C++ drivers.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Improved SONAR object detection metrics by 50%+ on the Automated Target Recognition team.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-600 mt-1">▸</span><span>Contributed to ML workflow improvements and internal tools for data analysis and management.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Earlier roles (compact) -->
+                <div class="relative pl-10 before:absolute before:left-[7px] before:top-3 before:bottom-0 before:w-px before:bg-zinc-800/50">
+                    <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-zinc-800 border border-zinc-700"></div>
+                    <h3 class="text-lg font-bold text-white mb-6">Earlier Roles</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="glass rounded-xl p-5">
+                            <p class="text-white font-semibold text-sm">Demonstrator & Tutor</p>
+                            <p class="text-zinc-500 text-xs mt-1">University of Edinburgh</p>
+                            <p class="text-zinc-600 text-xs font-mono mt-2">2016 — 2018</p>
+                        </div>
+                        <div class="glass rounded-xl p-5">
+                            <p class="text-white font-semibold text-sm">Data Analyst</p>
+                            <p class="text-zinc-500 text-xs mt-1">Annalect (OMG Group)</p>
+                            <p class="text-zinc-600 text-xs font-mono mt-2">Summer 2016</p>
+                        </div>
+                        <div class="glass rounded-xl p-5">
+                            <p class="text-white font-semibold text-sm">Software Developer</p>
+                            <p class="text-zinc-500 text-xs mt-1">Dangerfarms</p>
+                            <p class="text-zinc-600 text-xs font-mono mt-2">2014 — 2015</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mb-32">
+            <h2 class="text-zinc-500 uppercase tracking-[0.2em] text-xs font-bold mb-16 flex items-center gap-4">
+                <span>Interesting Early Work</span>
+                <div class="h-px bg-zinc-800 flex-1"></div>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quadruped -->
+                <a href="https://www.youtube.com/watch?v=VJd5niX49oU" target="_blank" class="project-card glass rounded-2xl p-6 group block">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-orange-600/10 flex items-center justify-center text-orange-500 text-xl">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <i class="fas fa-external-link-alt text-zinc-600 group-hover:text-orange-500 transition-colors text-sm"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Quadruped Robot</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Custom-built walking robot with adapted proprioceptive state estimation for dynamic gait control and balance.</p>
+                    <p class="text-zinc-600 text-xs font-mono mt-4">2018 · YouTube</p>
+                </a>
+
+                <!-- EUFS -->
+                <a href="https://www.eufs.co/driverless" target="_blank" class="project-card glass rounded-2xl p-6 group block">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-orange-600/10 flex items-center justify-center text-orange-500 text-xl">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <i class="fas fa-external-link-alt text-zinc-600 group-hover:text-orange-500 transition-colors text-sm"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">EUFS Autonomous Racing</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Co-founded the AI/Driverless team at Edinburgh University Formula Student — to this day, the most awarded team in the UK.</p>
+                    <p class="text-zinc-600 text-xs font-mono mt-4">2017 · Co-founder</p>
+                </a>
+
+                <!-- NinjaPong -->
+                <a href="https://www.youtube.com/watch?v=bn2u76CltBg" target="_blank" class="project-card glass rounded-2xl p-6 group block">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-orange-600/10 flex items-center justify-center text-orange-500 text-xl">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <i class="fas fa-external-link-alt text-zinc-600 group-hover:text-orange-500 transition-colors text-sm"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Ball-Curving Football Robot</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Award-winning football-playing robot with precision ball-curving mechanics. The one that made me fall in love with robotics.</p>
+                    <p class="text-zinc-600 text-xs font-mono mt-4">2016 · Award Winner</p>
+                </a>
+
+                <!-- First Robot -->
+                <a href="https://www.youtube.com/watch?v=osOMybgI7qM" target="_blank" class="project-card glass rounded-2xl p-6 group block">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-orange-600/10 flex items-center justify-center text-orange-500 text-xl">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <i class="fas fa-external-link-alt text-zinc-600 group-hover:text-orange-500 transition-colors text-sm"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Rough-Terrain Navigation</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">First full-size robot project — enabling rough terrain navigation for a wheeled platform with traversability estimation.</p>
+                    <p class="text-zinc-600 text-xs font-mono mt-4">2016 · YouTube</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="mb-32">
+            <h2 class="text-zinc-500 uppercase tracking-[0.2em] text-xs font-bold mb-16 flex items-center gap-4">
+                <span>Education & Service</span>
+                <div class="h-px bg-zinc-800 flex-1"></div>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass rounded-2xl p-8">
+                    <div class="w-12 h-12 rounded-xl bg-orange-600/10 flex items-center justify-center text-orange-500 text-xl mb-5">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-1">Master of Informatics</h3>
+                    <p class="text-orange-500 font-semibold text-sm mb-1">First Class Honours</p>
+                    <p class="text-zinc-500 text-sm mb-4">University of Edinburgh · 2013 — 2018</p>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Specialisation in Robotics, AI & Machine Learning. Key courses: Robot Learning & Sensorimotor Control, Intelligent Autonomous Robotics, ML & Pattern Recognition, Advanced Vision & Robotics, Computational Cognitive Neuroscience, Applied Machine Learning.
+                    </p>
+                </div>
+
+                <div class="glass rounded-2xl p-8">
+                    <div class="w-12 h-12 rounded-xl bg-orange-600/10 flex items-center justify-center text-orange-500 text-xl mb-5">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-xl mb-1">Second Lieutenant</h3>
+                    <p class="text-orange-500 font-semibold text-sm mb-1">Officer Commission</p>
+                    <p class="text-zinc-500 text-sm mb-4">Cypriot National Guard · 2011 — 2013</p>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Led a 22-soldier squad. Conscript and firearms speciality trainer. Two years of leadership under pressure before university.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="mb-32">
+            <h2 class="text-zinc-500 uppercase tracking-[0.2em] text-xs font-bold mb-16 flex items-center gap-4">
+                <span>Technical Stack</span>
+                <div class="h-px bg-zinc-800 flex-1"></div>
+            </h2>
+
+            <div class="space-y-10">
+                <div>
+                    <p class="text-xs text-zinc-500 uppercase tracking-widest mb-4 font-bold">Current</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">C++ (std17+)</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">CMake</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">Boost</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">Python</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">PyTorch</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">TensorFlow / Keras</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">TensorRT</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">CUDA</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">OpenCV</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">NumPy</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">Docker</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">Jenkins</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">Google Cloud</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-white cursor-default">UNIX & Windows</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs text-zinc-500 uppercase tracking-widest mb-4 font-bold">Past / Familiar</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">ROS</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">PCL</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Eigen</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">JavaScript</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Java</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Django / Flask</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">HTML / CSS</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">URDF / Gazebo</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs text-zinc-500 uppercase tracking-widest mb-4 font-bold">Domains</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Autonomous Vehicles</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Subsea Robotics</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Computer Vision</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Sensor Fusion</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Edge Deployment</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">MLOps</span>
+                        <span class="skill-tag px-4 py-2 glass rounded-lg text-sm text-zinc-400 cursor-default">Object Detection & Tracking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-zinc-900 py-12 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-600">
+            <p>© 2026 Stephanos Loizou · Edinburgh, UK</p>
+            <div class="flex gap-6">
+                <a href="mailto:loizoustephanos@gmail.com" class="hover:text-orange-500 transition-colors"><i class="fas fa-envelope mr-1"></i> Email</a>
+                <a href="https://www.linkedin.com/in/stephanos-loizou-153315123/" target="_blank" class="hover:text-orange-500 transition-colors"><i class="fab fa-linkedin mr-1"></i> LinkedIn</a>
+                <a href="https://github.com/LoizouS" target="_blank" class="hover:text-orange-500 transition-colors"><i class="fab fa-github mr-1"></i> GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
